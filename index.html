@@ -58,6 +58,27 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #8b0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #a40000;
+        }
+
         footer {
             background: #5a0000;
             color: white;
@@ -102,12 +123,41 @@
 </section>
 
 <section>
+    <h2>⭐ Recensioni dei Clienti</h2>
+
+    <div class="tour">
+        <p><strong>Maria R. (Milano):</strong><br>
+        “Esperienza meravigliosa! Il cibo era squisito e le guide molto professionali.”</p>
+    </div>
+
+    <div class="tour">
+        <p><strong>Giovanni T. (Roma):</strong><br>
+        “La spiaggia di Watamu è incredibile. Organizzazione perfetta, lo consiglio!”</p>
+    </div>
+
+    <div class="tour">
+        <p><strong>Laura F. (Napoli):</strong><br>
+        “Trasferimento comodo e staff cordiale. Mi sono sentita a casa.”</p>
+    </div>
+</section>
+
+<section>
+    <h2>✍️ Lascia una Recensione</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="message">La tua recensione:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Invia</button>
+    </form>
+</section>
+
+<section>
     <h2>Prenota il Tuo Tour con Viator</h2>
 
-    <!-- Original Viator Widget -->
     <div data-vi-partner-id="P00258494" data-vi-widget-ref="W-783cee21-d65c-481a-bb11-012ca11fa836"></div>
-
-    <!-- Your New Widget -->
     <div data-vi-partner-id="P00258494" data-vi-widget-ref="W-c6f62a2e-1eed-4d1e-891c-b6c37b94b8f1"></div>
 
     <script async src="https://www.viator.com/orion/partner/widget.js"></script>
